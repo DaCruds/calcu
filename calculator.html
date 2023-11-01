@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyes' Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .calculator {
+            width: 300px;
+            margin: 150px auto;
+            background-color: #c22727;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+
+        .display {
+            text-align: right;
+            padding: 10px;
+            font-size: 30px;
+            border-bottom: 1px solid #fdfcfc;
+        }
+
+        .keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .key {
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: 1px solid #0f0505;
+        }
+
+        .key:hover {
+            background-color: #c3b6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="keys">
+            <div class="key" id="clear">C</div>
+            <div class="key" id="divide">/</div>
+            <div class="key" id="multiply">*</div>
+            <div class="key" id="seven">7</div>
+            <div class="key" id="eight">8</div>
+            <div class="key" id="nine">9</div>
+            <div class="key" id="subtract">-</div>
+            <div class="key" id="four">4</div>
+            <div class="key" id="five">5</div>
+            <div class="key" id="six">6</div>
+            <div class="key" id="add">+</div>
+            <div class="key" id="one">1</div>
+            <div class="key" id="two">2</div>
+            <div class="key" id="three">3</div>
+            <div class="key" id="zero">0</div>
+            <div class="key" id="decimal">.</div>
+            <div class="key" id="equals">=</div>
+        </div>
+    </div>
+</body>
+</html>
